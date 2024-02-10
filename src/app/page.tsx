@@ -1,10 +1,13 @@
 'use client'
 import { NewCourse } from '@/components/NewCourse'
+import { FormProviderCreateCourse } from '@/forms'
 
 export default function Home() {
   return (
     <main className='container mx-auto'>
-      <NewCourse />
+      <FormProviderCreateCourse>
+        <NewCourse />
+      </FormProviderCreateCourse>
     </main>
   )
 }
