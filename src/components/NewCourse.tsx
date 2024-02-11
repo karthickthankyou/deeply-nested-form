@@ -168,7 +168,7 @@ const ManageNotes = ({ chapterIndex }: { chapterIndex: number }) => {
                   {/* Error: Chapter notes content */}
                   {
                     errors.chapters?.[chapterIndex]?.notes?.[notesIndex]
-                      ?.message
+                      ?.content?.message
                   }
                 </div>
               </label>
